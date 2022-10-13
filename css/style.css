@@ -38,10 +38,10 @@ ul{
 	padding: 0 15px;
 }
 .header .logo a{
-	font-size: 25px;
+	font-size: 20px;
 	text-transform: capitalize;
 	color: black;
-	font-weight: 900;
+	font-weight: bold;
 	font-family: monospace;
 	text-decoration: none;
 }
@@ -281,10 +281,11 @@ ul.menu {
 }
 
 .content h6 {
-    font-size: 35px;
+    font-size: 30px;
     color: white;
     font-family: monospace;
     font-weight: 600;
+    word-spacing: -5px;
 }
 .content {
     margin-top: 35px;

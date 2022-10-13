@@ -1,7 +1,7 @@
 $(function(){
    
     $(".typed").typed({
-        strings: [" I am Freelancer Rakib", " I am Front-End Web developer ", " I am Graphics Designer " ,],
+        strings: [" I am Freelancer Rakib", " I am Front-End developer ", " I am Graphics Designer " ,],
         loop: true,
         typeSpeed: 30,
         startDelay: 1200,
