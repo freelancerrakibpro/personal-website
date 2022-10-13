@@ -41,8 +41,8 @@ ul{
 	font-size: 25px;
 	text-transform: capitalize;
 	color: black;
-	font-weight: 600;
-	font-family: cursive;
+	font-weight: 900;
+	font-family: monospace;
 	text-decoration: none;
 }
 .header .nav-menu{
@@ -277,16 +277,14 @@ ul.menu {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 580px;
-	padding-top: 103px;
+    padding-top: 103px;
 }
 
 .content h6 {
     font-size: 35px;
     color: white;
-    font-family: cursive;
+    font-family: monospace;
     font-weight: 600;
-    font-variant: petite-caps;
 }
 .content {
     margin-top: 35px;
@@ -296,10 +294,8 @@ ul.menu {
     color: #ffffffe3;
     font-size: 14px;
     font-family: sans-serif;
-    width: 400px;
-	text-align: justify;
-
-
+    width: 320px;
+    text-align: justify;
 }
 .info-button{
 	background: #0bb5ff;
