@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Freelancerrakib.pro</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+
+  <!-- header start -->
+  <header class="header position-fixed">
+     <div class="container">
+        <div class="header-main">
+           <div class="logo">
+              <a href="#">Freelancerrakib<span style="color:aqua;">.pro</span></a>
+           </div>
+           <div class="open-nav-menu">
+              <span></span>
+           </div>
+           <div class="menu-overlay">
+           </div>
+           <!-- navigation menu start -->
+           <nav class="nav-menu">
+             <div class="close-nav-menu">
+                <img src="images/close.svg" alt="close">
+             </div>
+             <ul class="menu">
+                <li class="menu-item menu-item-has-children">
+                   <a href="#">Home </a>
+                </li>
+                <li class="menu-item">
+                   <a href="#">About Us</a>
+                </li>
+                
+                <li class="menu-item menu-item-has-children">
+                   <a href="#" data-toggle="sub-menu">Services <i class="plus"></i></a>
+                   <ul class="sub-menu">
+                       <li class="menu-item"><a href="#">WEB DESIGN</a></li>
+                       <li class="menu-item"><a href="#">WEB DEVELOPMENT</a></li>
+                       <li class="menu-item"><a href="#">RESPONSIVE DESIGN</a></li>
+                       <li class="menu-item"><a href="#">WORDPREES</a></li>
+                       <li class="menu-item"><a href="#">DATA ENTRY</a></li>
+                       <li class="menu-item"><a href="#">UNIQUE DESIGN</a></li>
+                   </ul>
+                </li>
+                <li class="menu-item">
+                   <a href="#">Gallery</a>
+                </li>
+                <li class="menu-item">
+                   <a href="#">Contact Us</a>
+                </li>
+             </ul>
+           </nav>
+           <!-- navigation menu end -->
+        </div>
+     </div>
+  </header>
+  
+  <!-- header end -->
+ <section class="cover-content w-auto">
+   <div class="container">
+      <h2 class="text-center" style="color:white;"> Hey ! <span class="typed"></span> </h2>
+     <div class="content">
+      <h6>Get Your Website & Web</h6>
+      <h6>Developed today</h6>
+      <P class="lh-sm mt-4">
+         Hello, I am a professional and skilled web developer. I develop websites in CMS called Wordprees. In terms of programming languages, I Prof proficient in HTML, CSS, JavaScript, jQuery, Bootstrap and PHP. Every website i make will be responsive and load fast. I will deliver your project on time and satisfy you because if you are satisfied I will be satisfied too.
+      </P>
+      <a href="#" type="button" class="info-button">GET A QUOET</a>
+     </div>
+     
+     
+   </div>
+ </section>
+ 
+ 
+ 
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+   (() =>{
+ 
+ const openNavMenu = document.querySelector(".open-nav-menu"),
+ closeNavMenu = document.querySelector(".close-nav-menu"),
+ navMenu = document.querySelector(".nav-menu"),
+ menuOverlay = document.querySelector(".menu-overlay"),
+ mediaSize = 991;
+
+ openNavMenu.addEventListener("click", toggleNav);
+ closeNavMenu.addEventListener("click", toggleNav);
+ // close the navMenu by clicking outside
+ menuOverlay.addEventListener("click", toggleNav);
+
+ function toggleNav() {
+    navMenu.classList.toggle("open");
+    menuOverlay.classList.toggle("active");
+    document.body.classList.toggle("hidden-scrolling");
+ }
+
+ navMenu.addEventListener("click", (event) =>{
+     if(event.target.hasAttribute("data-toggle") && 
+        window.innerWidth <= mediaSize){
+        // prevent default anchor click behavior
+        event.preventDefault();
+        const menuItemHasChildren = event.target.parentElement;
+       // if menuItemHasChildren is already expanded, collapse it
+       if(menuItemHasChildren.classList.contains("active")){
+          collapseSubMenu();
+       }
+       else{
+         // collapse existing expanded menuItemHasChildren
+         if(navMenu.querySelector(".menu-item-has-children.active")){
+          collapseSubMenu();
+         }
+         // expand new menuItemHasChildren
+         menuItemHasChildren.classList.add("active");
+         const subMenu = menuItemHasChildren.querySelector(".sub-menu");
+         subMenu.style.maxHeight = subMenu.scrollHeight + "px";
+       }
+     }
+ });
+ function collapseSubMenu(){
+    navMenu.querySelector(".menu-item-has-children.active .sub-menu")
+    .removeAttribute("style");
+    navMenu.querySelector(".menu-item-has-children.active")
+    .classList.remove("active");
+ }
+ function resizeFix(){
+     // if navMenu is open ,close it
+     if(navMenu.classList.contains("open")){
+        toggleNav();
+     }
+     // if menuItemHasChildren is expanded , collapse it
+     if(navMenu.querySelector(".menu-item-has-children.active")){
+          collapseSubMenu();
+    }
+ }
+
+ window.addEventListener("resize", function(){
+    if(this.innerWidth > mediaSize){
+       resizeFix();
+    }
+ });
+
+})();
+
+
+
+</script>
+<script src="plugin/jquery-3.5.1.min.js"></script>
+<script src="plugin/Font-Awesome.js"></script>
+<script src="plugin/typed.min.js"></script>
+<script src="js/script.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
