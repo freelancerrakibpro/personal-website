@@ -7,6 +7,7 @@ body{
 }
 body.hidden-scrolling{
 	overflow-y: hidden;
+	background-color: #f1fbff;
 }
 *{
 	margin:0;
@@ -145,12 +146,12 @@ ul.menu {
 }
 .info-button{
 	background: #0bb5ff;
-	padding: 6px 45px;
-	margin-bottom: 60px;
-	margin-top: 30px;
+	padding: 12px 40px;
+	margin-bottom: 30px;
+	margin-top: 10px;
 	color: white;
-	font-size: 20px;
-	font-family: monospace;
+	font-size: 16px;
+	font-family: sans-serif;
 	outline: none;
 	font-weight: 700;
 	border: #0bb5ff;
@@ -173,18 +174,12 @@ ul.menu {
 }
 /*header section ended*/
 /*about-us start*/
-.col-sm-6.about-images {
-    width: 450px;
-    height: auto;
-}
-.about-images img{
-	width: 400px;
-}
+
 .about-border::before {
     content: "";
     position: absolute;
     top: 115%;
-    width: 135px;
+    width: 170px;
     height: 4px;
     border-radius: 3px;
     background: linear-gradient(130deg,#ff7a18,#af002d 41.07%,#319197 76.05%);
@@ -192,12 +187,11 @@ ul.menu {
 
 .about-title h3 {
     font-size: 35px;
-    font-family: monospace;
+    font-family:sans-serif;
     font-weight: 900;
-    word-spacing: -10px;
 }
 .about-desciption{
-	color: gray;font-size: 15px;font-family: sans-serif;text-align: justify;
+	color: gray;font-size: 15px;font-family:sans-serif;text-align: justify;
 }
 
 
@@ -393,5 +387,9 @@ ul.menu {
 		width: 320px;
 		text-align: justify;
 	}
+	.about-img{
+		margin-bottom: 30px;
+	}
+
 }
 
