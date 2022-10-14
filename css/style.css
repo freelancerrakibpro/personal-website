@@ -273,11 +273,12 @@ ul.menu {
     margin-bottom: -1px;
 }
 .cover-content{
-	background: linear-gradient(#0bb8ff45,#000000db), url(file:///E:/personal%20website/images/01-cover.jpg);
+	background: linear-gradient(#0bb8ff45,#000000db), url(../images/cover.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     padding-top: 103px;
+	height: 600px;
 }
 
 .content h6 {
@@ -300,15 +301,15 @@ ul.menu {
 }
 .info-button{
 	background: #0bb5ff;
-    padding: 12px 22px;
-    margin-bottom: 95px;
-    margin-top: 30px;
-    color: white;
-    font-size: 16px;
-    outline: none;
-    border: #0bb5ff;
-    border-radius: 5px;
-    cursor: pointer;
+	padding: 12px 22px;
+	margin-bottom: 60px;
+	margin-top: 30px;
+	color: white;
+	font-size: 16px;
+	outline: none;
+	border: #0bb5ff;
+	border-radius: 5px;
+	cursor: pointer;
 }
 .content a{
 	font-size: 15px;
