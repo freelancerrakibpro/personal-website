@@ -179,10 +179,13 @@ ul.menu {
     content: "";
     position: absolute;
     top: 115%;
-    width: 170px;
-    height: 4px;
+    left: 50%;
+    width: 70px;
+    height: 3px;
     border-radius: 3px;
-    background: linear-gradient(130deg,#ff7a18,#af002d 41.07%,#319197 76.05%);
+    transform: translateX(-50%);
+    background:
+    linear-gradient(130deg,#ff7a18,#af002d 41.07%,#319197 76.05%);
 }
 
 .about-title h3 {
@@ -389,7 +392,15 @@ ul.menu {
 	}
 	.about-img{
 		margin-bottom: 30px;
+		
 	}
 
 }
 
+
+
+img.card-img-top {
+    width: 200px;
+    margin: auto;
+    height: 200px;
+}
