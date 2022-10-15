@@ -197,8 +197,19 @@ ul.menu {
 	color: gray;font-size: 15px;font-family:sans-serif;text-align: justify;
 }
 
-
-
+img.card-img-top {
+    width: 200px;
+    margin: auto;
+    height: 200px;
+}
+.hello-button:hover{
+	background-color: #0bb5ff;
+	color: white;
+}
+.hello-button{
+	background-color: black;
+	color: white;
+}
 
 
 
@@ -394,13 +405,9 @@ ul.menu {
 		margin-bottom: 30px;
 		
 	}
+	
 
 }
 
 
 
-img.card-img-top {
-    width: 200px;
-    margin: auto;
-    height: 200px;
-}
