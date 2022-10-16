@@ -22,7 +22,7 @@ ul{
 	padding:0;
 }
 section{
-	margin-bottom: 50px;
+	margin-bottom: 80px;
 }
 /*header*/
 .header{
@@ -216,7 +216,7 @@ img{
 	max-width: 100%;
 }
 .gallery{
-	background-color: #dbddf1;
+	background-color: #dbddf133;
 	padding: 80px 0;
 }
 .gallery img{
